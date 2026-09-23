@@ -1,0 +1,17 @@
+# Sistema Operativo
+.DS_Store
+Thumbs.db
+desktop.ini
+$RECYCLE.BIN/
+
+# Configuración de Entornos / Editores de código
+.vscode/
+.idea/
+*.suo
+*.user
+
+# Logs y Temporales
+*.log
+*.tmp
+*.temp
+.cache/
