@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Palabras clave SEO por sección -->
+  <meta name="keywords" content="Portafolio Web, Estudiante de Software, HTML5, CSS3, Python, SQL, UTL, León">
+  <meta name="description" content="Portafolio personal de desarrollo de software y proyectos académicos.">
+  <title>Portafolio Personal | Desarrollo de Software</title>
+  
+  <!-- Tipografía Google Fonts e Íconos Font Awesome -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+  
+  <link rel="stylesheet" href="../css/styles.css">
+</head>
+<body>
+
+  <!-- Encabezado / Navegación -->
+  <header class="navbar">
+    <div class="logo">
+      <i class="fa-solid fa-terminal"></i> <span>Portafolio</span>
+    </div>
+    <nav>
+      <ul class="nav-links">
+        <li><a href="#inicio"><i class="fa-solid fa-house"></i> Inicio</a></li>
+        <li><a href="#sobre-mi"><i class="fa-solid fa-user"></i> Sobre Mí</a></li>
+        <li><a href="#academico"><i class="fa-solid fa-graduation-cap"></i> Formación</a></li>
+        <li><a href="#proyectos"><i class="fa-solid fa-folder-open"></i> Proyectos</a></li>
+        <li><a href="#contacto"><i class="fa-solid fa-envelope"></i> Contacto</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <!-- Sección: Inicio -->
+    <section id="inicio" class="hero-section">
+      <div class="hero-content">
+        <h1>Hola, soy <span class="highlight">Estudiante de Software</span></h1>
+        <p>Enfocado en aprender desarrollo web, bases de datos y desarrollo backend.</p>
+        <a href="#proyectos" class="btn-primary">Ver Avances <i class="fa-solid fa-arrow-down"></i></a>
+      </div>
+    </section>
+
+    <!-- Sección: Sobre Mí -->
+    <section id="sobre-mi" class="content-section">
+      <h2><i class="fa-solid fa-user"></i> Sobre Mí</h2>
+      <div class="grid-2col">
+        <div class="bio-text">
+          <p>Actualmente me encuentro cursando la carrera de Desarrollo de Software Multiplataforma. Me interesa el desarrollo backend, el modelado de bases de datos relacionales y la resolución de problemas mediante código estructurado.</p>
+          
+          <h3>Tecnologías en Aprendizaje:</h3>
+          <div class="skills-tags">
+            <span class="tag"><i class="fa-brands fa-html5"></i> HTML5</span>
+            <span class="tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span class="tag"><i class="fa-brands fa-python"></i> Python</span>
+            <span class="tag"><i class="fa-solid fa-database"></i> SQL</span>
+            <span class="tag"><i class="fa-brands fa-git-alt"></i> Git</span>
+          </div>
+        </div>
+        <div class="media-box">
+          <h3>Presentación en Audio</h3>
+          <p class="media-desc">Breve introducción personal y objetivos académicos:</p>
+          <audio controls>
+            <source src="audio_presentacion.mp3" type="audio/mpeg">
+            Tu navegador no soporta el elemento de audio.
+          </audio>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Académica -->
+    <section id="academico" class="content-section bg-alt">
+      <h2><i class="fa-solid fa-graduation-cap"></i> Formación Académica</h2>
+      <div class="timeline">
+        <div class="timeline-item">
+          <h3>TSU EN DESARROLLO DE SOFTWARE MULTIPLATAFORMA</h3>
+          <p class="institution">Universidad Tecnológica de León</p>
+          <p>Formación práctica orientada a la programación estructurada, bases de datos, maquetación web y metodologías de desarrollo.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Proyectos Académicos y Prácticas -->
+    <section id="proyectos" class="content-section">
+      <h2><i class="fa-solid fa-folder-open"></i> Proyectos y Prácticas</h2>
+      <div class="projects-grid">
+        
+        <article class="project-card">
+          <div class="card-img">
+            <i class="fa-solid fa-code fa-3x"></i>
+          </div>
+          <div class="card-body">
+            <h3>Sitio Web Personal (Portafolio)</h3>
+            <p>Maquetado web semántico con HTML5 y estilos CSS con diseño adaptativo, cumpliendo con buenas prácticas de SEO local.</p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <div class="card-img">
+            <i class="fa-solid fa-database fa-3x"></i>
+          </div>
+          <div class="card-body">
+            <h3>Prácticas de Bases de Datos & Lógica</h3>
+            <p>Ejercicios académicos en SQL para diseño de tablas y consultas, junto con scripts en Python para resolución de algoritmos.</p>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Elemento de Video Requerido por la Tarea -->
+      <div class="video-container">
+        <h3>Demostración de Prácticas</h3>
+        <p class="media-desc">Video representativo sobre flujo de desarrollo web y maquetación:</p>
+        <div class="video-wrapper">
+          <iframe src="https://www.youtube-nocookie.com/embed/dQw4w9WgXcQ" title="Demostración de proyectos" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección: Contacto -->
+    <section id="contacto" class="content-section bg-alt">
+      <h2><i class="fa-solid fa-envelope"></i> Formulario de Contacto</h2>
+      <form class="contact-form" action="#" method="POST" onsubmit="event.preventDefault(); alert('Mensaje enviado.');">
+        <div class="form-group">
+          <label for="nombre">Nombre Completo:</label>
+          <input type="text" id="nombre" name="nombre" placeholder="Tu nombre" required>
+        </div>
+
+        <div class="form-group">
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" placeholder="ejemplo@correo.com" required>
+        </div>
+
+        <div class="form-group">
+          <label for="asunto">Asunto:</label>
+          <input type="text" id="asunto" name="asunto" placeholder="Motivo de mensaje" required>
+        </div>
+
+        <div class="form-group">
+          <label for="mensaje">Mensaje:</label>
+          <textarea id="mensaje" name="mensaje" rows="4" placeholder="Escribe tu mensaje aquí..." required></textarea>
+        </div>
+
+        <button type="submit" class="btn-primary"><i class="fa-solid fa-paper-plane"></i> Enviar Mensaje</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 Portafolio Web Personal | Desarrollo de Software</p>
+    <div class="social-links">
+      <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+    </div>
+  </footer>
+
+</body>
+</html>
