@@ -6,6 +6,8 @@
   <!-- Palabras clave SEO por sección -->
   <meta name="keywords" content="Portafolio Web, Estudiante de Software, HTML5, CSS3, Python, SQL, UTL, León">
   <meta name="description" content="Portafolio personal de desarrollo de software y proyectos académicos.">
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="../Favicon/favicon.ico">
   <title>Portafolio Personal | Desarrollo de Software</title>
   
   <!-- Tipografía Google Fonts e Íconos Font Awesome -->
@@ -55,6 +57,8 @@
           <div class="skills-tags">
             <span class="tag"><i class="fa-brands fa-html5"></i> HTML5</span>
             <span class="tag"><i class="fa-brands fa-css3-alt"></i> CSS3</span>
+            <span class="tag"><i class="fa-brands fa-java"></i> Java</span>
+            <span class="tag"><i class="fa-solid fa-code"></i> Kotlin</span>
             <span class="tag"><i class="fa-brands fa-python"></i> Python</span>
             <span class="tag"><i class="fa-solid fa-database"></i> SQL</span>
             <span class="tag"><i class="fa-brands fa-git-alt"></i> Git</span>
@@ -75,11 +79,17 @@
     <section id="academico" class="content-section bg-alt">
       <h2><i class="fa-solid fa-graduation-cap"></i> Formación Académica</h2>
       <div class="timeline">
-        <div class="timeline-item">
-          <h3>TSU EN DESARROLLO DE SOFTWARE MULTIPLATAFORMA</h3>
-          <p class="institution">Universidad Tecnológica de León</p>
-          <p>Formación práctica orientada a la programación estructurada, bases de datos, maquetación web y metodologías de desarrollo.</p>
+      <div class="timeline-item">
+        <h3>TSU EN DESARROLLO DE SOFTWARE MULTIPLATAFORMA</h3>
+        
+        <!-- Contenedor para las imágenes -->
+        <div class="image-container">
+          <img src="../Images/Desarrollo.jpeg" alt="Desarrollo de software" class="timeline-img">
         </div>
+
+        <p class="institution">Universidad Tecnológica de León</p>
+        <p>Formación práctica orientada a la programación estructurada, bases de datos, maquetación web y metodologías de desarrollo.</p>
+      </div>
       </div>
     </section>
 
@@ -89,24 +99,30 @@
       <div class="projects-grid">
         
         <article class="project-card">
-          <div class="card-img">
-            <i class="fa-solid fa-code fa-3x"></i>
-          </div>
-          <div class="card-body">
-            <h3>Sitio Web Personal (Portafolio)</h3>
-            <p>Maquetado web semántico con HTML5 y estilos CSS con diseño adaptativo, cumpliendo con buenas prácticas de SEO local.</p>
-          </div>
+        <div class="card-img">
+          <i class="fa-solid fa-code fa-3x"></i>
+        </div>
+        <div class="card-body">
+          <h3>
+            <a href="https://github.com/Mcpapu9/Act5SitioWeb" target="_blank" rel="noopener noreferrer">
+              Sitio Web Personal (Portafolio)
+            </a>
+          </h3>
+          <p>Maquetado web semántico con HTML5 y estilos CSS con diseño adaptativo, cumpliendo con buenas prácticas de SEO local.</p>
+        </div>
         </article>
 
-        <article class="project-card">
-          <div class="card-img">
-            <i class="fa-solid fa-database fa-3x"></i>
-          </div>
-          <div class="card-body">
-            <h3>Prácticas de Bases de Datos & Lógica</h3>
-            <p>Ejercicios académicos en SQL para diseño de tablas y consultas, junto con scripts en Python para resolución de algoritmos.</p>
-          </div>
-        </article>
+        <a href="https://github.com/Mcpapu9/Sistema-Escolar-BD-java" target="_blank" rel="noopener noreferrer" class="card-link">
+          <article class="project-card">
+            <div class="card-img">
+              <i class="fa-solid fa-database fa-3x"></i>
+            </div>
+            <div class="card-body">
+              <h3>Sistema Escolar (Java + MySQL)</h3>
+              <p>Proyecto de gestión escolar en Java con Apache Ant y conexión a base de datos MySQL.</p>
+            </div>
+          </article>
+        </a>
 
       </div>
 
@@ -152,7 +168,7 @@
   <footer>
     <p>&copy; 2026 Portafolio Web Personal | Desarrollo de Software</p>
     <div class="social-links">
-      <a href="#"><i class="fa-brands fa-github"></i> GitHub</a>
+      <a href="https://github.com/Mcpapu9/"><i class="fa-brands fa-github"></i> GitHub</a>
     </div>
   </footer>
 

@@ -1,0 +1,339 @@
+:root {
+  --primary: #2563eb;
+  --primary-dark: #1d4ed8;
+  --bg-main: #0f172a;
+  --bg-card: #1e293b;
+  --bg-alt: #111827;
+  --text-main: #f8fafc;
+  --text-muted: #94a3b8;
+  --accent: #38bdf8;
+  --font-main: 'Roboto', sans-serif;
+  --font-code: 'JetBrains Mono', monospace;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-main);
+  background-color: var(--bg-main);
+  color: var(--text-main);
+  line-height: 1.6;
+}
+
+/* Navegación */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 1rem 8%;
+  background-color: rgba(37, 53, 90, 0.95);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  border-bottom: 1px solid #334155;
+}
+
+.logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--accent);
+  font-family: var(--font-code);
+}
+
+.nav-links {
+  display: flex;
+  list-style: none;
+  gap: 1.2rem;
+}
+
+.nav-links a {
+  color: var(--text-main);
+  text-decoration: none;
+  font-size: 0.95rem;
+  transition: color 0.3s;
+}
+
+.nav-links a:hover {
+  color: var(--accent);
+}
+
+/* Hero */
+.hero-section {
+  padding: 4rem 1rem;
+  text-align: center;
+  background: linear-gradient(180deg, var(--bg-main) 0%, var(--bg-card) 100%);
+}
+
+.hero-content h1 {
+  font-size: 2.2rem;
+  margin-bottom: 0.8rem;
+}
+
+.highlight {
+  color: var(--accent);
+}
+
+.hero-content p {
+  color: var(--text-muted);
+  max-width: 500px;
+  margin: 0 auto 1.5rem auto;
+}
+
+/* Botones */
+.btn-primary {
+  display: inline-block;
+  background-color: var(--primary);
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 6px;
+  text-decoration: none;
+  font-weight: bold;
+  border: none;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.btn-primary:hover {
+  background-color: var(--primary-dark);
+}
+
+/* Secciones Generales */
+.content-section {
+  padding: 4rem 8%;
+}
+
+.bg-alt {
+  background-color: var(--bg-alt);
+}
+
+.content-section h2 {
+  font-size: 1.8rem;
+  margin-bottom: 1.5rem;
+  color: var(--accent);
+  border-bottom: 2px solid #334155;
+  padding-bottom: 0.4rem;
+}
+
+/* Grid & Tags */
+.grid-2col {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 2rem;
+}
+
+.skills-tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.6rem;
+  margin-top: 1rem;
+}
+
+.tag {
+  background-color: var(--bg-card);
+  padding: 0.4rem 0.8rem;
+  border-radius: 16px;
+  font-family: var(--font-code);
+  font-size: 0.85rem;
+  border: 1px solid #334155;
+}
+
+.media-box {
+  background-color: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+
+.media-desc {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+  margin-bottom: 1rem;
+}
+
+/* Timeline */
+.timeline-item {
+  background-color: var(--bg-card);
+  padding: 1.2rem;
+  border-left: 4px solid var(--primary);
+  border-radius: 0 6px 6px 0;
+}
+
+.institution {
+  color: var(--accent);
+  font-weight: bold;
+  margin-bottom: 0.4rem;
+}
+
+/* Tarjetas de Proyectos */
+.projects-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 1.5rem;
+  margin-bottom: 2.5rem;
+}
+
+.project-card {
+  background-color: var(--bg-card);
+  border-radius: 8px;
+  overflow: hidden;
+  border: 1px solid #334155;
+}
+
+.card-img {
+  background-color: #334155;
+  height: 120px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--accent);
+}
+
+.card-body {
+  padding: 1.2rem;
+}
+
+.card-body h3 {
+  font-size: 1.1rem;
+  margin-bottom: 0.5rem;
+}
+
+.card-body p {
+  font-size: 0.9rem;
+  color: var(--text-muted);
+}
+
+/* Video Wrapper */
+.video-container {
+  margin-top: 2rem;
+  background-color: var(--bg-card);
+  padding: 1.5rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+
+.video-wrapper {
+  position: relative;
+  padding-bottom: 56.25%;
+  height: 0;
+  overflow: hidden;
+  border-radius: 6px;
+  margin-top: 0.8rem;
+}
+
+.video-wrapper iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* Formulario */
+.contact-form {
+  max-width: 550px;
+  margin: 0 auto;
+  background-color: var(--bg-card);
+  padding: 1.8rem;
+  border-radius: 8px;
+  border: 1px solid #334155;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.4rem;
+  font-size: 0.9rem;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 0.7rem;
+  border-radius: 4px;
+  border: 1px solid #475569;
+  background-color: #0f172a;
+  color: #fff;
+  font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: var(--accent);
+}
+
+/* Footer */
+footer {
+  text-align: center;
+  padding: 1.5rem;
+  background-color: #090d16;
+  border-top: 1px solid #334155;
+  color: var(--text-muted);
+  font-size: 0.9rem;
+}
+
+.social-links {
+  margin-top: 0.5rem;
+}
+
+.social-links a {
+  color: var(--accent);
+  text-decoration: none;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    gap: 0.8rem;
+  }
+  
+  .grid-2col {
+    grid-template-columns: 1fr;
+  }
+}
+
+/* Quita el subrayado y fuerza a que el enlace use el color de texto del elemento padre */
+.card-link, 
+.card-link:visited, 
+.card-link:hover, 
+.card-link:active {
+  text-decoration: none;
+  color: inherit;
+  display: block;
+}
+
+/* Quita el estilo de enlace por defecto a los links dentro de la tarjeta */
+.card-body h3 a,
+.card-body h3 a:visited {
+  color: var(--text-main); /* Usa el texto blanco/claro principal */
+  text-decoration: none;   /* Quita la línea morada de abajo */
+  transition: color 0.3s ease;
+}
+
+/* Cambia a azul claro cuando pasas el mouse por encima */
+.card-body h3 a:hover,
+.card-body h3 a:active {
+  color: var(--accent);
+  text-decoration: underline; 
+}
+
+.card-link:hover h3 {
+  color: var(--accent);
+}
+
+.timeline-img {
+  max-width: 480px;       
+  height: auto;          
+  margin-bottom: 1rem; 
+  border-radius: 6px; 
+  display: block;
+}
